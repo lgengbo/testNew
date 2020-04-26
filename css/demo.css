@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* S: 开始游戏按钮 */
+.startPage {
+  width: 100%;
+  height: 945px;
+  z-index: 999;
+  position: absolute; /* 铺满整个宽度 */
+  top: 0;
+  left: 0;
+}
+
+.startPage .startBtn {
+  width: 200px;
+  height: 170px;
+  background-image: url("../image/startGame.png");
+  background-size: 100% 100%;
+  position: absolute; /* 居中 */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+}
+
+/* E: 开始游戏按钮 */
+
+/* S: 运动区域  */
+.warpper {
+  width: 100%;
+  height: 945px;
+  background-image: url("../image/bg.jpg");
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.warpper .left_side {
+  position: absolute;
+  width: 24%;
+  height: 945px;
+}
+
+.warpper .left_side img {
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.warpper .main {
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  left: 25%;
+}
+
+.warpper .main .header {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+}
+
+.warpper .main .header .score {
+  line-height: 80px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.warpper .main .content {
+  position: absolute;
+  width: 79.5%;
+  height: 36.5%;
+  left: 10%;
+  top: 34%;
+}
+
+.food{
+  background-image: url(../image/apple.png);
+  background-size: 100% 100%;
+}
+
+.head{
+  background-image: url(../image/snake_head.png);
+  background-size: 100% 100%;
+}
+
+.body{
+  background-image: url(../image/snake_body.png);
+  background-size: 100% 100%;
+}
+/* E: 运动区域  */
+
+/* S: 失败  */
+.loser{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 945px;
+    top: 0;
+    left: 0;
+}
+
+.loser .con{
+    background-image: url('../image/loserP.jpg');
+    background-size: 100% 100%;
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.loser .con .close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url('../image/closeBtn.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.loser .con .loserScore{
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 42%;
+    left: 40%;
+    color: #222;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* E: 失败  */
